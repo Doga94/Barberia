@@ -1,0 +1,12 @@
+:root{
+    --font_text: 'Inter', sans-serif;
+    --bordes_negros: black;
+    --fondo-1: #C8C8D2;
+    --fontdo-2: #FAFAFC;
+}
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
