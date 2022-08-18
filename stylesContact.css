@@ -1,0 +1,100 @@
+@import url(./src/vars.css);
+
+*{
+    list-style: none;
+    text-decoration: none;
+}
+.container {
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+header{
+    background-color: var(--fondo-1);
+    padding: 20px 0;
+}
+.navegation{
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+.navegation li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+.navegation a {
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+}
+.navegation a:hover{
+    color: rgba(236, 112, 11, 0.965);
+    text-decoration: underline;
+}
+
+/* Formulario */
+main{
+    width: 940px;
+    margin: 0 auto;
+}
+form {
+    margin: 40px 0;
+}
+form label, form legend {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+.input-padron{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+.checkbox {
+    margin: 20px 0;
+}
+.enviar {
+    width: 40%;
+    padding: 15px 0;
+    font-size: 19px;
+    font-weight: bold;
+    color: var(--fontdo-2);
+    background: orange;
+    border-style: none;
+    border-radius: 6px;
+    transition: 1s all;
+    cursor: pointer;
+}
+.enviar:hover{
+    background: darkorange;
+    transform: scale(1.1);
+}
+
+/* Tabla */
+
+table {
+    margin: 40px;
+}
+thead {
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+td, th {
+    border: 1px solid var(--fondo-1);
+    padding: 8px 15px;
+}
+
+/* Footer */
+footer{
+    text-align: center;
+    background-image: url(./src/img/bg.jpg);
+    padding: 40px;
+}
+.copyright{
+    color: var(--fontdo-2);
+    font-size: 12px;
+    margin: 20px;
+}

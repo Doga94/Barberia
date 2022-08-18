@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="./src/normalize.css">
+    <link rel="stylesheet" href="./src/reset.css">
+    <link rel="stylesheet" href="./stylesContact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><img src="./src/img/logo.png" alt="Barberia-alura"></h1>
+            <nav class="navegation">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Prodcuts</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <form action="">
+            <label for="nombreApellido">
+                Nombre y apellido
+            </label>
+            <input type="text" id="nombreApellido" placeholder="Tu nombre aqui" class="input-padron" required>
+
+            <label for="correoelec">Correo Electrónico</label>
+            <input type="email" name="" id="correoelec" placeholder="correo@hotmail.com" class="input-padron" required>
+
+            <label for="telef">Teléfono</label>
+            <input type="tel" name="" id="telef" placeholder="+57 312229011" class="input-padron" required>
+
+            <label for="campodeTexto">Mensaje</label>
+            <textarea name="" id="Mensaje" cols="56" rows="10" placeholder="Tu mensaje aqui" class="input-padron" required></textarea>
+            
+            <fieldset>
+                <legend>¿Cómo le gustaría que lo contactemos?</legend>
+    
+                <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
+                
+                <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono">Telefono</label>
+                
+                <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
+                
+            </fieldset>
+
+            <fieldset>
+                <legend>¿En cual horario prefiere ser atendido?</legend>
+                <select name="" id="">
+                    <option value="">Mañana</option>
+                    <option value="">Tarde</option>
+                    <option value="">Noche</option>
+                </select>
+            </fieldset>
+
+            <label class="checkbox"><input type="checkbox" checked>¿Le gustaría recibir nivedades de la Barberia?</label>
+
+            <input type="submit"  value="Enviar formulario" class="enviar">
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Día</th>
+                    <th>Horario</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Lunes</td>
+                    <td>08h - 20h</td>
+                </tr>
+                <tr>
+                    <td>Miercoles</td>
+                    <td>08h - 20h</td>
+                </tr>
+                <tr>
+                    <td>Viernes</td>
+                    <td>08h - 20h</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </main>
+
+    <footer>
+        <img src="./src/img/logo-blanco.png" alt="Barberia Alura">
+        <p class="copyright">&copy Copyrigth barberia Alura - 2020</p>
+    </footer>
+</body>
+</html>
